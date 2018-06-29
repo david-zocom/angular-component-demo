@@ -1,0 +1,14 @@
+<p>
+  Counter: {{count}}
+  <button (click)="increaseClick()">increase</button>
+  <button (click)="decreaseClick()">decrease</button>
+</p>
+<p *ngIf="count === 5">
+	Yes, there are 5 parrots.
+</p>
+<p *ngIf="count < 5">
+	Too few parrots.
+</p>
+<p *ngIf="count > 5">
+	Too many parrots.
+</p>
